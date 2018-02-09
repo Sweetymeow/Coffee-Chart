@@ -19,9 +19,10 @@ import { GoogleNewsService } from './services/google-news.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule,
-  MatSlideToggleModule, MatToolbarModule } from '@angular/material';
+  MatSlideToggleModule, MatToolbarModule, MatProgressBarModule, MatSnackBarModule } from '@angular/material';
 
 import 'hammerjs';
+import { FirebaseStorageComponent } from './comps/firebase-storage/firebase-storage.component';
 
 const appRoutes: Routes = [
   {path: '', component: ListComponent },
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     ChartComponent,
     ListComponent,
     CoffeeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FirebaseStorageComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -49,7 +51,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCardModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule,
-    MatSlideToggleModule, MatToolbarModule
+    MatSlideToggleModule, MatToolbarModule, MatProgressBarModule, MatSnackBarModule
   ],
   providers: [ListDataService, GeoLocationService, GoogleNewsService],
   bootstrap: [AppComponent]

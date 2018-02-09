@@ -21,5 +21,19 @@
 </head>
 <body>
   <app-root></app-root>
+  <!-- Try to add firebase for Cloud databae & ? -->
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD-dFOA07fKq7alTNTKO9WQe_ahhm0sumU",
+      authDomain: "coffeechart-e7c7e.firebaseapp.com",
+      databaseURL: "https://coffeechart-e7c7e.firebaseio.com",
+      projectId: "coffeechart-e7c7e",
+      storageBucket: "coffeechart-e7c7e.appspot.com",
+      messagingSenderId: "299436911222"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>
