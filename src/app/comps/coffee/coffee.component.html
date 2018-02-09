@@ -1,0 +1,80 @@
+<!-- <mat-card *ngFor="let coffee of list">
+  COFFEE Components
+</mat-card> -->
+<form action="index.html" method="post" class="coffee-form">
+  <mat-card class="cfBasicInfo">
+    <mat-card-title>Basic Coffee Info</mat-card-title>
+    <mat-card-content>
+      <mat-form-field class="formInput-full-width">
+        <input matInput placeholder="Coffee Name" [(ngModel)]="coffee.name" name="name">
+        <!-- <input matInput placeholder="Coffee Name"  value="coffee_type"> -->
+      </mat-form-field>
+
+      <mat-form-field class="formInput-full-width">
+        <mat-select placeholder="Coffee Type" [(ngModel)]="coffee.type" name="type">
+          <mat-option *ngFor="let type of types" [value]="type">
+            {{ type }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="rating">
+    <mat-card-subtitle>Overall Rating</mat-card-subtitle>
+    <mat-card-content>
+      <mat-slider class="ratingSlider" color="primary" name="rating" [max]="sliderConfige.max" [min]="sliderConfige.min" thumbLabel [tick-interval]="sliderConfige.tickInt" [(ngModel)]="coffee.rating">
+      </mat-slider>
+      <mat-slide-toggle color="primary" #tastingSelector [checked]="tastingEnable"
+        (change)="onRatingChanged(tastingSelector.checked)">Tasting Ratings</mat-slide-toggle>
+    </mat-card-content>
+
+    <mat-card-content *ngIf="tastingSelector.checked">
+      <label for="aromaRating">Aroma</label>
+      <mat-slider class="ratingSlider" name="aromaRating" [max]="sliderConfige.max" [tick-interval]="sliderConfige.tickInt" [(ngModel)]="coffee.tastingRating.aroma"></mat-slider>
+      <label for="flavorRating">Flavor</label>
+      <mat-slider class="ratingSlider" name="flavorRating" [max]="sliderConfige.max" [tick-interval]="sliderConfige.tickInt" [(ngModel)]="coffee.tastingRating.flavor"></mat-slider>
+      <label for="intensityRating">Intensity</label>
+      <mat-slider class="ratingSlider" name="intensityRating" [max]="sliderConfige.max" [tick-interval]="sliderConfige.tickInt" [(ngModel)]="coffee.tastingRating.intensity"></mat-slider>
+      <label for="sweetnessRating">Sweetness</label>
+      <mat-slider class="ratingSlider" name="sweetnessRating" [max]="sliderConfige.max" [tick-interval]="sliderConfige.tickInt" [(ngModel)]="coffee.tastingRating.sweetness"></mat-slider>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="cfPlace">
+    <mat-form-field class="formInput-full-width">
+      <input matInput placeholder="Coffee Place" [(ngModel)]="coffee.place" name="place">
+      <!-- <input matInput placeholder="Coffee Name"  value="coffee_type"> -->
+    </mat-form-field>
+    <mat-form-field class="formInput-full-width">
+      <input matInput placeholder="Address" [(ngModel)]="coffee.location.address" name="address">
+      <!-- <input matInput placeholder="Coffee Name"  value="coffee_type"> -->
+    </mat-form-field>
+    <mat-form-field class="formInput-full-width">
+      <input matInput placeholder="City" [(ngModel)]="coffee.location.city" name="city">
+      <!-- <input matInput placeholder="Coffee Name"  value="coffee_type"> -->
+    </mat-form-field>
+  </mat-card>
+
+  <mat-card class="cfNotes">
+    <mat-card-content>
+      <mat-form-field class="formInput-full-width">
+        <textarea matInput placeholder="Leave a Note" name="note"></textarea>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-content class="cfACtion">
+      <!-- {{ coffee | json }} -->
+      <button mat-raised-button (click)="onCancelBtnPress()">Cancel</button>
+      <button mat-raised-button color="accent" (click)="onSaveBtnPress()">Save</button>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- <mat-card>
+    <mat-card-header>
+      <mat-card-title> Debug - Show coffee object</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      {{ coffee | json }}
+    </mat-card-content>
+  </mat-card> -->
+</form>

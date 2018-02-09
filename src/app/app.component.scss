@@ -1,0 +1,24 @@
+.fill-remaining-space{
+  flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+}
+
+.button-icon{
+  padding-left: .6rem;
+}
+
+.cfLinkTitle{
+  &:hover{
+    color: #EDE7F6;
+  }
+}
+
+
+.fixToBtm{
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  a{
+
+  }
+}
