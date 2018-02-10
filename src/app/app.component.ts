@@ -8,6 +8,8 @@ import { MatSnackBar } from '@angular/material';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title: string = "Coffee Chart App";
+
   onShowMessageToInstallApp : any = (message, action) => {
     return this.snackBar.open(message, action, {
       duration: 5000,
