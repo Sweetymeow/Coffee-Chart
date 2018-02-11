@@ -9,6 +9,7 @@ import { MatSnackBar } from '@angular/material';
 })
 export class AppComponent {
   title: string = 'Coffee Chart App';
+
   onShowMessageToInstallApp : any = (message, action) => {
     return this.snackBar.open(message, action, {
       duration: 5000,
@@ -37,7 +38,7 @@ export class AppComponent {
           window.addEventListener("beforeinstallprompt", event => {
             event.preventDefault();
             const sb = this.onShowMessageToInstallApp("Do you want to install this App?", "install");
-            sb.onAction().subscriobe( () => {
+            sb.onAction().subscribe( () => {
               console.log(event); // Prevents prompt display
               (event as any).prompt();
               (event as any).userChoice.then( result => {

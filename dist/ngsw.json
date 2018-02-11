@@ -9,8 +9,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/inline.8e1af4076eb6574e5091.bundle.js",
-        "/main.8ff330a1fe5c33c39cd6.bundle.js",
+        "/inline.e0ebf3f2b6674bcc43b1.bundle.js",
+        "/main.f060e6f2ac03068213a4.bundle.js",
         "/polyfills.f20484b2fa4642e0dca8.bundle.js",
         "/styles.e62aefcfb351cce6115d.bundle.css"
       ],
@@ -59,9 +59,9 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/inline.8e1af4076eb6574e5091.bundle.js": "6148f24bac883a4ccfdc0c2ebd3c541c8c44eaad",
+    "/inline.e0ebf3f2b6674bcc43b1.bundle.js": "4621103c83bfff8b8b6862db2fd97b3cd71f64fc",
     "/assets/allItems.json": "0a3b5ed410e1e12007980161f95bdf7f939c3bd9",
-    "/main.8ff330a1fe5c33c39cd6.bundle.js": "295fd228b826b2b43ea8c29cf90e266f5f91532a",
+    "/main.f060e6f2ac03068213a4.bundle.js": "eac40580b8b4a861660a04f7a4e9875f4766bf05",
     "/assets/config.json": "2afcb8331dd5d3d1426531cf43ca339681154871",
     "/polyfills.f20484b2fa4642e0dca8.bundle.js": "1973e2201185e6b94ecc056c0d12c75955a96283",
     "/assets/icons8-coffee_to_go.png": "dce57aefdfc7a61452cd49df67df18f13309d6cd",
@@ -69,7 +69,7 @@
     "/assets/sample.json": "088092ac90782eedba2ac1697de6967761157e91",
     "/favicon.ico": "cf9b51ab03cbf9d0b03baf8f3ebcdb49b249f6a4",
     "/assets/test.html": "ef0ee413435113f7dcefc410aa488415d3dc57e9",
-    "/index.html": "4f73edafb342c1d35d855d21b958ef954afa65e7",
+    "/index.html": "759249f6a0ea3ca0b4bc7be1d5c09d93798e3985",
     "/assets/icons/android-icon-144x144.png": "04b9433a7372eb35ff6449db06720d7c3aff66e9",
     "/assets/icons/android-icon-192x192.png": "3f83517b1ec6a6e2b218ea5b4604c9030a7b4cbc",
     "/assets/icons/android-icon-36x36.png": "8d673b2c151c2d243d0e07d1a2c5fcdadbfc2c7d",
