@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 // import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 // import { InMemoryDataService }  from './services/in-memory-data.service';
 
@@ -23,6 +24,8 @@ import { MatButtonModule, MatCardModule, MatIconModule, MatInputModule, MatSelec
 
 import 'hammerjs';
 import { FirebaseStorageComponent } from './comps/firebase-storage/firebase-storage.component';
+
+// import { environment } from '../environments/environment.prod';
 
 const appRoutes: Routes = [
   {path: '', component: ListComponent },
@@ -46,6 +49,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes // { enableTracing: true } // <-- debugging purposes only
     ),
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     BrowserModule,
     FormsModule,
     HttpClientModule,

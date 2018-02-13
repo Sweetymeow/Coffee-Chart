@@ -11,6 +11,7 @@
       "assets": [
         "assets",
         "favicon.ico",
+        "ngsw-worker.js",
         "manifest.json"
       ],
       "index": "index.html",

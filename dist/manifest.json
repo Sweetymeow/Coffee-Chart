@@ -1,0 +1,23 @@
+{
+  "name": "Ng4 Material Coffee Chart App",
+  "short_name": "CoffeeChartApp",
+  "theme_color": "#673ab7",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [{
+    "src": "assets/icons/apple-icon-72x72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  },{
+    "src": "assets/icons/apple-icon-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  },{
+    "src": "assets/icons/android-icon-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}
