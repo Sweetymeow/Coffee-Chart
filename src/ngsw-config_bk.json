@@ -21,7 +21,20 @@
     "resources": {
       "files": [
         "/assets/**"
+      ],
+      "urls": [
+        "http://localhost:4200/coffees"
       ]
+    }
+  }],
+  "dataGroups": [{
+    "name": "My Coffee Chart App",
+    "urls": ["/coffees", "/chart"],
+    "cacheConfig": {
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": "1h",
+      "timeout": "5s"
     }
   }]
 }

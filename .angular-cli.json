@@ -7,11 +7,10 @@
     {
       "root": "src",
       "outDir": "dist",
-      "serviceWorker": true,
+      "serviceWorker": false,
       "assets": [
         "assets",
         "favicon.ico",
-        "ngsw-worker.js",
         "manifest.json"
       ],
       "index": "index.html",
