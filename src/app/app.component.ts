@@ -23,9 +23,8 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    // console.log(navigator.standalone);
+    console.log(navigator);
     if((navigator as any).standalone === false){
-
       // iOS Devices & in Browser
       this.onShowMessageToInstallApp("You can add this PWA to the Home Screen!", null);
     }else if((navigator as any).standalone === undefined){
