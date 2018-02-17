@@ -1,0 +1,40 @@
+{
+  "index": "/index.html",
+  "assetGroups": [{
+    "name": "app",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/favicon.ico",
+        "/index.html"
+      ],
+      "versionedFiles": [
+        "/*.bundle.css",
+        "/*.bundle.js",
+        "/*.chunk.js"
+      ]
+    }
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/assets/**"
+      ],
+      "urls": [
+        "http://localhost:4200/coffees"
+      ]
+    }
+  }],
+  "dataGroups": [{
+    "name": "My Coffee Chart App",
+    "urls": ["/coffees", "/chart"],
+    "cacheConfig": {
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": "1h",
+      "timeout": "5s"
+    }
+  }]
+}

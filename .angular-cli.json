@@ -7,7 +7,7 @@
     {
       "root": "src",
       "outDir": "dist",
-      "serviceWorker": true,
+      "serviceWorker": false,
       "assets": [
         "assets",
         "favicon.ico",

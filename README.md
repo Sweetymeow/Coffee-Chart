@@ -2,6 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
+## Run with Service Worker
+
+### Solution 1 - **BUG!!**
+```
+$ ng serve --prod
+```
+
+### Solution 2 - WORK/compelecate
+> Need to install http-server 
+```
+$ ng build --prod
+$ cd dist
+$ http-server
+```
+
+## Run simple node server to provide BE data
+go to /server 
+```
+$ cd server
+$ node index
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

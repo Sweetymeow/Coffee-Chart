@@ -49,7 +49,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes // { enableTracing: true } // <-- debugging purposes only
     ),
-    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     BrowserModule,
     FormsModule,
     HttpClientModule,
